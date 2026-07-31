@@ -1,0 +1,58 @@
+## Implemented
+
+  The current app is a functional frontend demo with:
+
+  - React/Vite/TypeScript setup.
+  - Teacher dashboard.
+  - Parent preview mode.
+  - Teacher/parent view switcher.
+  - Seeded Grade 5 projects.
+  - Project creation and publishing.
+  - Project title, subject, grade, class, due date, description, and materials.
+  - Due-date and “days left” indicators.
+  - Subject filtering.
+  - Parent “Mark as started” action.
+  - Responsive desktop, tablet, and mobile layouts.
+  - Product and visual design documentation.
+  - Initial Supabase database schema.
+  - Integration contracts for:
+      - SA-SAMS sync.
+      - WhatsApp messaging.
+      - Project API operations.
+
+  - GitHub repository connection and pushed commits.
+
+  The app currently uses local seeded state. It is not yet a live school system.
+
+  ## Not implemented yet
+
+  - Supabase authentication.
+  - Live Supabase data persistence.
+  - Production Row Level Security policies.
+  - Parent invitations and phone verification.
+  - Real WhatsApp messages.
+  - WhatsApp reminder scheduling.
+  - C#/.NET SA-SAMS Windows sync agent.
+  - Real .mdb schema mapping.
+  - POPIA consent, export, deletion, and retention workflows.
+  - Automated test suite.
+  - Deployment environment.
+  - Marks, fees, attendance, payments, and CSV export.
+
+  ## Recommended next steps
+
+  1. Create the Supabase project and environment configuration.
+  2. Apply the schema as migrations and complete/test RLS policies.
+  3. Replace local React state with Supabase queries and mutations.
+  4. Add teacher authentication and parent invitation flows.
+  5. Add guardian-to-learner linking and access controls.
+  6. Connect WhatsApp through a provider adapter and notification outbox.
+  7. Obtain a sanitized SA-SAMS backup from the pilot school.
+  8. Inspect its actual tables and document the mapping.
+  9. Build the read-only C#/.NET Windows sync agent.
+  10. Add loading, error, empty, offline, and retry states.
+  11. Add security, integration, and notification tests.
+  12. Run a synthetic-data pilot before importing real learner data.
+
+  The best immediate development milestone is: authenticated Supabase-backed project management with teacher and parent access
+  control.
